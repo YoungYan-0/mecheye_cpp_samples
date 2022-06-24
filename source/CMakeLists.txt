@@ -23,6 +23,7 @@ set(SAMPLES
     Advanced/CaptureTimedAndPeriodically
     Util/GetCameraIntri
     Util/PrintDeviceInfo
+    Util/RegressionTest
     Util/SetParameters
     Util/SetDepthRange
     Util/SetUserSets
@@ -38,11 +39,12 @@ set(PCL_DEPENDING
     CaptureCloudFromDepth
     CaptureSequentiallyMultiCamera
     CaptureSimultaneouslyMultiCamera
-    CaptureTimedAndPeriodically)
+    CaptureTimedAndPeriodically
+    RegressionTest)
 
 set(OpenCV_DEPENDING
     CaptureColorMap CaptureDepthMap CaptureSequentiallyMultiCamera
-    CaptureSimultaneouslyMultiCamera CaptureTimedAndPeriodically)
+    CaptureSimultaneouslyMultiCamera CaptureTimedAndPeriodically RegressionTest)
 
 macro(disable_samples DEPENDENCY_NAME)
   message("${DEPENDENCY_NAME} samples have been disabled:")
